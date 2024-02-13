@@ -72,17 +72,51 @@ const inputClosePin = document.querySelector('.form__input--pin');
 //interestRate: 1.2, // %
 //pin: 1111,
 //};
-
 // uso map (nuevo array) o forEach (modificar el array original)
 
 const createUsernames = funcion (accounts) {
-accounts.forEach(function (accounts) {
-account.username = account.owner // Juan Sanchez
-.toLowerCase()// juan sanchez
-.split(' ') // ['j', 's']
-.join('') // js (lo contrario que split)
+  accounts.forEach(function (accounts) {
+   account.username = account.owner // Juan Sanchez
+   .toLowerCase()// juan sanchez
+   .split(' ') // ['j', 's']
+   .join('') // js (lo contrario que split)
 
 })
+}
 createUsernames(accounts)
 
-console.log(accounts)
+
+// tareas_
+// mostrar el texto de bienvenida
+// cambiar opacidad
+// quitar los movimientos que hay en el html
+// poner los nuevos movimientos en el html
+
+// hacer lo mismo desde REACT
+// SUBIR APP EN REACT 
+// 1. SE COMPILA: npm run build
+// 2. SUBIR LA CARPETA BUILD A CERTWEB
+// si en carpeta local creo una subcarpeta pig-game => https:// xxx.certweb.infenlaces.com/pig-game
+// si da error quiza haya que poner un campo en el package.json "homepage" con la ruta https://certweb.com/...
+
+btnLogin.addEventListener('click', function (e) {
+  // no llames al servidor!! EVITA EL COMPORTAMIENTO POR DEFECTO DEL SERVIDOR:
+  e.preventDefault() 
+  console.log('LOGIN')
+  console.log(inputLoginUsername.value)
+  console.log(inputLoginPin.value)
+
+  const currentAccount = accounts.find(
+    (account) => account.username === inputLoginUsername.value
+  ) // 1. recibir un objeto cuenta {pin:1111, ...}
+    // 2. recibir undefined si no existe la cuenta
+  if (currentAccount?.pin === Number(inputLoginPin.value)) {
+    console.log('LOGIN CORRECTO')
+    // mostramos Bienvenido Juan
+
+  }else {
+    console.log('LOGIN INCORRECTO')
+    //mostramos usuario o contraseña incorrectos
+  }
+  console.log(currentAccount)
+})
