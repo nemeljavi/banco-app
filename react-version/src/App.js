@@ -2,13 +2,19 @@ import './App.css'
 import Welcome from './Welcome/Welcome'
 import Login from './Login/Login'
 import Summary from './Summary/Summary'
+<<<<<<< HEAD
 IMPORT Movements from '-/Movements'
+=======
+import Movements from './Movements/Movements'
+import Balance from './Balance/Balance'
+>>>>>>> juanda99/main
 
 function App() {
   return (
     <>
       <nav>
         <Welcome />
+<<<<<<< HEAD
         <Login/>
       </nav>
 
@@ -26,6 +32,15 @@ function App() {
     
 
         <Sumary />
+=======
+        <Login />
+      </nav>
+
+      <main className="app">
+        <Balance />
+        <Movements />
+        <Summary />
+>>>>>>> juanda99/main
 
         <div className="operation operation--transfer">
           <h2>Transfer money</h2>

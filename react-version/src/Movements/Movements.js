@@ -1,6 +1,12 @@
+<<<<<<< HEAD
 import './movements.css'
 
 function movements() {
+=======
+import './Movements.css'
+
+function Movements() {
+>>>>>>> juanda99/main
   return (
     <div className="movements">
       <div className="movements__row">
@@ -18,7 +24,14 @@ function movements() {
         <div className="movements__value">-378€</div>
       </div>
     </div>
+<<<<<<< HEAD
   );
 }
 
 export default Movements
+=======
+  )
+}
+
+export default Movements
+>>>>>>> juanda99/main

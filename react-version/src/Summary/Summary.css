@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+/* SUMMARY */
+>>>>>>> juanda99/main
 .summary {
   grid-row: 5 / 6;
   display: flex;
@@ -25,4 +29,23 @@
 
 .summary__value--out {
   color: #f5465d;
+<<<<<<< HEAD
 }
+=======
+}
+
+.btn--sort:hover,
+.btn--sort:focus {
+  outline: none;
+  color: #777;
+}
+
+.btn--sort {
+  margin-left: auto;
+  border: none;
+  background: none;
+  font-size: 1.3rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+>>>>>>> juanda99/main

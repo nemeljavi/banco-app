@@ -16,5 +16,12 @@ function Login() {
       />
       <button className="login__btn">&rarr;</button>
     </form>
+<<<<<<< HEAD
   );
 }
+=======
+  )
+}
+
+export default Login
+>>>>>>> juanda99/main

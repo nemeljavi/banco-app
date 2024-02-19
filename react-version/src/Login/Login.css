@@ -35,8 +35,15 @@
 }
 
 .login__btn:hover,
+<<<<<<< HEAD
 .login__btn:focus
 {
   outline: none;
   color: #777;
 }
+=======
+.login__btn:focus {
+  outline: none;
+  color: #777;
+}
+>>>>>>> juanda99/main
